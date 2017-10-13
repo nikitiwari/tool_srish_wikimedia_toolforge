@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style_index.css"/>
+  </head>
+  <body>
+    <div class = "left1">
+      <h1>WIKIPEDIA CHECK</h1>
+      <h3>Enter the username whose recent English wikipedia edits you want to see.</h3>
+      <form class="edits">
+        <input id="searchTerm" type="text" class="form-control" size="50" placeholder="Username" required/>
+        <br/>
+        <button type="submit" id="submitBtn">Search</button>
+      </form>
+    </div>
+    <div class="right1">
+      <h2>User Contribution Summary</h2>
+      <div id="output">
+
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
