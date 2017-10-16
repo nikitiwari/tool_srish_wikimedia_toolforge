@@ -4,7 +4,7 @@ $(document).ready(function () {
     event.preventDefault();
     $("#output").empty();
     var username = searchTerm.val();
-    var url = 'https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&list=usercontribs&ucuser={{searchTerm}}&ucdir=newer&uclimit=5&callback=?'.replace('{{searchTerm}}', username);
+    var url = 'https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&list=usercontribs&ucuser={{searchTerm}}&ucdir=newer&uclimit=5'.replace('{{searchTerm}}', username);
     $.getJSON(url).then(function (data) {
       console.log(data);
       var contribs = [];
